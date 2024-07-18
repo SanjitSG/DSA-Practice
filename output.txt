@@ -1,2 +1,1 @@
-Sum of 2 + 6 = 8
-Average of 2 and 6 = 4
+User is not an adult
