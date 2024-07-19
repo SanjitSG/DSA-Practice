@@ -6,13 +6,27 @@ int main()
 {
 
   // * 1. find sum and avg of two numbers;
+  /*
+    int x, y;
+    cin >> x >> y;
+    cout << "Sum of " << x << " + " << y << " = " << x + y << endl;
+    cout << "Average of " << x << " and " << y << " = " << (x + y) / 2;
 
-  // int x, y;
-  // cin >> x >> y;
-  // cout << "Sum of " << x << " + " << y << " = " << x + y << endl;
-  // cout << "Average of " << x << " and " << y << " = " << (x + y) / 2;
-
+  */
   // *2. even and odd
+  /*
+    int num;
+    cin >> num;
+
+    if (num % 2 == 0)
+    {
+      cout << "Even";
+    }
+    else
+    {
+      cout << "Odd";
+    }
+  */
   // *3. quadratic equation
   // *4. factorial of a number
   // *5. fibonacci series
