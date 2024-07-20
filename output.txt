@@ -1,2 +1,0 @@
-str inside doSomething: Fame
-str inside main: Fame

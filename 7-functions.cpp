@@ -52,6 +52,7 @@ void doSomething(string &str)
 
   cout << "str inside doSomething: " << str << endl;
 }
+
 int main()
 {
   /*array example
