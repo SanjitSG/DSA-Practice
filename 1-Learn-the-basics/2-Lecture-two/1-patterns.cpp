@@ -136,6 +136,40 @@ void print10(int n)
   }
 }
 
+void print11(int n)
+{
+  for (int i = 1; i <= n; i++)
+  {
+  }
+}
+
+void print12(int n)
+{
+  for (int i = 1; i <= n; i++)
+  {
+    int spaces = 2 * (n - i);
+    // number
+    for (int j = 1; j <= i; j++)
+    {
+      cout << j;
+    }
+
+    // spaces
+    for (int j = 1; j <= spaces; j++)
+    {
+      cout << " ";
+    }
+
+    // number
+    for (int j = i; j >= 1; j--)
+    {
+      cout << j;
+    }
+
+    cout << endl;
+    spaces -= 2;
+  }
+}
 int main()
 {
 
@@ -145,7 +179,7 @@ int main()
   {
     int n;
     cin >> n;
-    print10(n);
+    print12(n);
   }
 
   return 0;
