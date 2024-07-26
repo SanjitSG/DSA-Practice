@@ -21,7 +21,15 @@ void explainPair()
 {
 
   pair<int, int> p = {1, 3};
-  cout << p.first << p.second;
+  cout << p.first << " " << p.second << endl;
+
+  // nested pairs - hers pair can be a datatype
+  pair<int, pair<int, int>> n = {1, {3, 5}};
+  cout << n.second.second << " " << n.second.first << endl;
+
+  // pair array
+  pair<int, int> arr[] = {{1, 4}, {3, 6}, {5, 1}};
+  cout << arr[1].second;
 }
 
 int main()
