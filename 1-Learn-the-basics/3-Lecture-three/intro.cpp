@@ -70,8 +70,34 @@ void explainVectors()
   //  cout << v[0];
 
   // 2. Using Iterators
-  vector<int>::iterator it = v.begin();
-  cout << *(it);
+  // vector<int>::iterator it = v.begin();
+  // cout << *(it);
+  // vector<int>::iterator it = v.end();
+  // cout << *(it);
+  vector<int> vet(5, 1);
+  vet.push_back(2);
+  vet.push_back(4);
+  vet.push_back(6);
+  vet.push_back(8);
+
+  // => printing using for loop
+
+  // for (vector<int>::iterator it = vet.begin(); it != vet.end(); it++)
+  // {
+  //   cout << *(it) << " ";
+  // }
+
+  // -> auto keyword
+  // for (auto it = vet.begin(); it != vet.end(); it++)
+  // {
+  //   cout << *(it) << " ";
+  // }
+
+  // => using for each loop
+  for (auto it : vet)
+  {
+    cout << it << " ";
+  }
 }
 
 int main()
