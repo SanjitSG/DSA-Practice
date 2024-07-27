@@ -98,11 +98,34 @@ void explainVectors()
   {
     cout << it << " ";
   }
+  cout << endl;
+  // deletion in vectors
+  vet.erase(vet.begin() + 6);
+  for (auto it : vet)
+  {
+    cout << it << " ";
+  }
+
+  // insertion
+  // other functions
+  // .size | .swap | .pop_back | .clear | .empty
+
+  cout << endl
+       << "------------------VECTOR END----------------" << endl;
 }
 
+//* 2.list
+// similar to vectors with addition of push_front and emplace_front functions.
+
+//* 3. Deque
+// Similar to vector and list with addition of pop_back, pop_front dq.back, dq.front
+
+//* 4. Stack (LIFO - Last in First Out)
+// Three generic functions of Stack are push, pop, top
 int main()
 {
   // explainPair();
-  explainVectors();
+  // explainVectors();
+
   return 0;
 }
