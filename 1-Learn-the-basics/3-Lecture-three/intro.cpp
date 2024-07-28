@@ -129,19 +129,33 @@ void explainVectors()
 void expQueue()
 {
   queue<int> q;
-  q.push(2);
   q.push(4);
+  q.push(10);
+  q.push(2);
   q.emplace(7);
   cout << q.front() << " ";
   cout << q.back();
 }
 
-// 6. priority queue
+// 6. priority queue aka min heap
+// largest element on top
+void expPriorityQueue()
+{
+  priority_queue<int> pq;
+
+  pq.push(5);
+  pq.push(10);
+  pq.push(2);
+  pq.push(7);
+
+  cout << pq.top();
+}
 int main()
 {
   // explainPair();
   // explainVectors();
-  expQueue();
+  // expQueue();
+  expPriorityQueue();
 
   return 0;
 }
