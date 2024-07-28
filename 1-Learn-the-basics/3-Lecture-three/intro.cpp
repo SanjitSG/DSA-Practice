@@ -15,6 +15,7 @@ STL is divided into 4 parts
 #include <iostream>
 #include <utility>
 #include <vector>
+#include <queue>
 // *Pairs - it is a part of utility library.
 
 using namespace std;
@@ -122,10 +123,25 @@ void explainVectors()
 
 //* 4. Stack (LIFO - Last in First Out)
 // Three generic functions of Stack are push, pop, top
+
+// 5. Queue - FIFO (First in First Out)
+// push, pop, front, back
+void expQueue()
+{
+  queue<int> q;
+  q.push(2);
+  q.push(4);
+  q.emplace(7);
+  cout << q.front() << " ";
+  cout << q.back();
+}
+
+// 6. priority queue
 int main()
 {
   // explainPair();
   // explainVectors();
+  expQueue();
 
   return 0;
 }
