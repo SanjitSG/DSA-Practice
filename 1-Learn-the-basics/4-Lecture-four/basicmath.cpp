@@ -47,6 +47,25 @@ void palindrome(int n)
   else
     cout << "false";
 }
+
+void armstrongNum(int n)
+{
+  int dup = n;
+  int size = log10(n) + 1;
+  int sum = 0;
+  while (n > 0)
+  {
+    int ld = n % 10;
+    sum += pow(ld, size);
+    n = n / 10;
+  }
+
+  if (sum == dup)
+    cout << "true";
+  else
+    cout << "false";
+}
+
 int main()
 {
 
@@ -55,6 +74,7 @@ int main()
 
   // countDigit(integer);
   // revDigit(integer);
-  palindrome(integer);
+  // palindrome(integer);
+  armstrongNum(integer);
   return 0;
 }
