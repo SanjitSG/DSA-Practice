@@ -98,11 +98,22 @@ void printAllDivisors(int n)
 void checkPrime(int n)
 {
   int cnt = 0;
-  for (int i = 1; i <= n; i++)
+  /*for (int i = 1; i <= n; i++)
   {
     if (n % i == 0)
     {
       cnt++;
+    }
+  }*/
+  for (int i = 1; i <= sqrt(n); i++)
+  {
+    if (n % i == 0)
+    {
+      cnt++;
+      if (n / i != i)
+      {
+        cnt++;
+      }
     }
   }
   if (cnt == 2)
@@ -110,17 +121,34 @@ void checkPrime(int n)
   else
     cout << n << " is not a Prime number";
 }
+
+void gcd(int a, int b)
+{
+  while (a > 0 && b > 0)
+  {
+    if (a > b)
+      a = a % b;
+    else
+      b = b % a;
+  }
+  if (a == 0)
+    cout << b;
+  else
+    cout << a;
+}
+
 int main()
 {
 
-  int integer;
-  cin >> integer;
+  int n1, n2;
+  cin >> n1 >> n2;
 
   // countDigit(integer);
   // revDigit(integer);
   // palindrome(integer);
   // armstrongNum(integer);
   // printAllDivisors(integer);
-  checkPrime(integer);
+  // checkPrime(integer);
+  gcd(n1, n2);
   return 0;
 }
