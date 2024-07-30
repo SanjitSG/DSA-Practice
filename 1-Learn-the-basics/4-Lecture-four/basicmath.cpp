@@ -66,6 +66,16 @@ void armstrongNum(int n)
     cout << "false";
 }
 
+void printAllDivisors(int n)
+{
+  for (int i = 1; i <= n; i++)
+  {
+    if (n % i == 0)
+    {
+      cout << i << " ";
+    };
+  }
+}
 int main()
 {
 
@@ -75,6 +85,7 @@ int main()
   // countDigit(integer);
   // revDigit(integer);
   // palindrome(integer);
-  armstrongNum(integer);
+  // armstrongNum(integer);
+  printAllDivisors(integer);
   return 0;
 }
