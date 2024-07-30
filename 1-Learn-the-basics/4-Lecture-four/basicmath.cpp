@@ -81,14 +81,34 @@ void printAllDivisors(int n)
   for (int i = 1; i <= sqrt(n); i++)
   {
     if (n % i == 0)
+    {
+
       ls.push_back(i);
-    if (n / i != i)
-      ls.push_back(n / i);
+      if (n / i != i)
+        ls.push_back(n / i);
+    }
   }
 
   sort(ls.begin(), ls.end());
-  for(auto it : ls) cout << it << " ";
+  for (auto it : ls)
+    cout << it << " ";
   // time complexity - O(N/2)
+}
+
+void checkPrime(int n)
+{
+  int cnt = 0;
+  for (int i = 1; i <= n; i++)
+  {
+    if (n % i == 0)
+    {
+      cnt++;
+    }
+  }
+  if (cnt == 2)
+    cout << n << " a Prime number";
+  else
+    cout << n << " is not a Prime number";
 }
 int main()
 {
@@ -100,6 +120,7 @@ int main()
   // revDigit(integer);
   // palindrome(integer);
   // armstrongNum(integer);
-  printAllDivisors(integer);
+  // printAllDivisors(integer);
+  checkPrime(integer);
   return 0;
 }
