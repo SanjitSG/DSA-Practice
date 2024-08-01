@@ -1,2 +1,4 @@
 10
 10
+factorial of 4 is 24
+fact is 24
