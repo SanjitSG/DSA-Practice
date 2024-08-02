@@ -1,4 +1,1 @@
-10
-10
-factorial of 4 is 24
-fact is 24
+1 2 4 5 2 
