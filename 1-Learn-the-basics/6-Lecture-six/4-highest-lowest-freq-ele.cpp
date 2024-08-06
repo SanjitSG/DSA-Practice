@@ -15,7 +15,7 @@ int main()
   }
 
   // pre-compute
-  int hash[13] = {0};
+  unordered_map<int, int> hash;
   for (int i = 0; i < n; i++)
   {
     hash[arr[i]]++;
