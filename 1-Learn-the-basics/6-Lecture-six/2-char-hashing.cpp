@@ -12,8 +12,9 @@ int main()
   int hash[26] = {0};
   for (int i = 0; i < s.size(); i++)
   {
-    hash[s[i]]++;
+    hash[s[i] - 'a']++;
   }
+
 
   int q;
   cin >> q;
@@ -22,8 +23,8 @@ int main()
   {
     char c;
     cin >> c;
-    //fetch
-    cout << c << " -> " << hash[c] << endl;
+    // fetch
+    cout << c << " -> " << hash[c - 'a'] << endl;
   }
   return 0;
 }
