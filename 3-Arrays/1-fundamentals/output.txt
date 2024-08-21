@@ -1,2 +1,1 @@
-Max Element is: 5
-23451
+Second largest : 5
