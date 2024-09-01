@@ -14,7 +14,7 @@ string largestOdd(string &str)
   for (int i = n - 1; i >= 0; i--)
   {
     // finding last odd index
-    if (str[i] - '0' % 2 == 1)
+    if ((str[i] - '0') % 2 == 1)
     {
       end = i;
       break;
@@ -24,7 +24,7 @@ string largestOdd(string &str)
   for (int i = 0; i < n; i++)
   {
     // finding first non-zero index
-    if (str[i] - '0' != 0)
+    if ((str[i] - '0') != 0)
     {
       start = i;
       break;
